@@ -1,0 +1,34 @@
+{
+  "name": "voltacus-starleague",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js --ignore client"
+  },
+  "author": "Spencer Markin",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "express-promise-router": "^3.0.3",
+    "express-session": "^1.15.0",
+    "passport": "^0.3.2",
+    "passport-bnet": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "*",
+    "sequelize": "^5.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "eslint-plugin-prettier": "^3.0.0"
+  }
+}
