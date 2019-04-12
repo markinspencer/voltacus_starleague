@@ -20,6 +20,15 @@ const User = db.define('user', {
   },
   token: {
     type: Sequelize.STRING
+  },
+  battleTag: {
+    type: Sequelize.STRING
+  },
+  provider: {
+    type: Sequelize.STRING
+  },
+  profileId: {
+    type: Sequelize.STRING
   }
 });
 
