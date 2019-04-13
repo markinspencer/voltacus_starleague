@@ -1,11 +1,11 @@
 import { Component } from 'react';
 import queryString from 'query-string';
-import { login, logout, getCurrentUser } from '../../services/auth.service';
+import { getCurrentUser, setCurrentUser, logout } from '../../services/auth.service';
 
 class Login extends Component {
   componentWillMount = () => {
     const { token } = queryString.parse(this.props.location.search);
-    login(token);
+    setCurrentUser(token);
 
     const user = getCurrentUser();
 

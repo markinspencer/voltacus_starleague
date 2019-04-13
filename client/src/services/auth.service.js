@@ -2,7 +2,7 @@ import http from './http.service';
 import { USER_KEY } from '../config.json';
 import jwtDecode from 'jwt-decode';
 
-export const login = jwt => localStorage.setItem(USER_KEY, jwt);
+export const setCurrentUser = jwt => localStorage.setItem(USER_KEY, jwt);
 
 export const logout = () => localStorage.removeItem(USER_KEY);
 
