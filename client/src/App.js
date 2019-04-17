@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './components/navBar.component';
 import Login from './components/common/login.component';
 import Logout from './components/common/logout.component';
-import ProfileList from './components/profileList.component';
+import Profile from './components/profile/profile.component';
 import { Route, Switch } from 'react-router-dom';
 import { getCurrentUser } from './services/auth.service';
 
@@ -17,7 +17,7 @@ class App extends Component {
             <Switch>
               <Route path="/login" component={Login} />
               <Route path="/logout" component={Logout} />
-              <Route path="/profile" render={props => <ProfileList {...props} />} />
+              <Route path="/profile" component={Profile} />
             </Switch>
           </main>
         </div>
